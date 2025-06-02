@@ -2,6 +2,7 @@ package kr.ac.kopo.actionbarandfreagment;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,7 @@ public class MyTabFragment extends androidx.fragment.app.Fragment {
         baseLayout.setOrientation(LinearLayout.VERTICAL);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         baseLayout.setLayoutParams(params);
+        baseLayout.setGravity(Gravity.CENTER);
 
         ImageView img1 = new ImageView(super.getActivity());
         LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
